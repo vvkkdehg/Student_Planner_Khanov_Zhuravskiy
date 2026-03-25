@@ -25,6 +25,9 @@ fun StudentPlannerNavHost(
                 onSubjectClick = { subjectId ->
                     navController.navigate(Screen.Details.createRoute(subjectId))
                 },
+                onRaspisClick = {
+                    navController.navigate(Screen.Raspis.route)
+                },
                 onProfileClick = {
                     navController.navigate(Screen.Profile.route)
                 },
@@ -61,6 +64,14 @@ fun StudentPlannerNavHost(
 
         composable(route = Screen.Settings.route) {
             SettingsScreen(
+                onNavigateBack = {
+                    navController.popBackStack()
+                }
+            )
+        }
+
+        composable(route = Screen.Raspis.route) {
+            RaspisScreen(
                 onNavigateBack = {
                     navController.popBackStack()
                 }
