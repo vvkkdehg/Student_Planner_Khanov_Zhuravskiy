@@ -7,9 +7,9 @@ data class Subject(
     val credits: Int,
     val currentGrade: String,
     val description: String
-) {
-    val sampleSubjects = listOf(
-        Subject(
+)
+val sampleSubjects = listOf(
+    Subject(
             id = "1",
             name = "Разработка мобильных приложений",
             professor = "Леонтьев Д.А.",
@@ -17,7 +17,7 @@ data class Subject(
             currentGrade = "Отлично",
             description = "Разработка нативных Android-приложений с использованием Kotlin и современных компонентов Jetpack Compose. Изучение архитектурных паттернов MVVM, работы с локальными базами данных и сетевыми API."
         ),
-        Subject(
+    Subject(
             id = "2",
             name = "Менеджмент в профессиональной деятельности",
             professor = "Запорожская С.А.",
@@ -25,7 +25,7 @@ data class Subject(
             currentGrade = "Зачет",
             description = "Создание своей компании. Обучение управлять ею. "
         ),
-        Subject(
+    Subject(
             id = "3",
             name = "Системное программирование",
             professor = "Токаев Т.И.",
@@ -33,7 +33,7 @@ data class Subject(
             currentGrade = "Хорошо",
             description = "Низкоуровневая разработка на языке Rust: управление памятью без сборщика мусора, многопоточность, работа с операционной системой и создание высокопроизводительных системных компонентов."
         ),
-        Subject(
+    Subject(
             id = "4",
             name = "Иностранный язык в профессиональной деятельности",
             professor = "Пенькова О.В.",
@@ -41,7 +41,7 @@ data class Subject(
             currentGrade = "Хорошо",
             description = "Изучение английских слов, связанных с направлением подготовки, чтение текстов и составление аннотаций"
         ),
-        Subject(
+    Subject(
             id = "5",
             name = "Физическая культура",
             professor = "Магомедов С.К.",
@@ -49,7 +49,7 @@ data class Subject(
             currentGrade = "Отлично",
             description = "Поддержание физической формы студентов. Сдача нормативов"
         ),
-        Subject(
+    Subject(
             id = "7",
             name = "Разработка программных модулей",
             professor = "Донскова Д.А.",
@@ -57,7 +57,7 @@ data class Subject(
             currentGrade = "Отлично",
             description = "Разработка, отладка и тестирование программных модулей на языках программирования, работа с базами данных"
         ),
-        Subject(
+    Subject(
             id = "8",
             name = "Управление проектами",
             professor = "Трошина О.В.",
@@ -65,7 +65,7 @@ data class Subject(
             currentGrade = "Хорошо",
             description =  "Планирование, организация и контроль выполнения IT-проектов, управление рисками и ресурсами"
         ),
-        Subject(
+    Subject(
             id = "9",
             name = "Математическое моделирование",
             professor = "Трошина О.В.",
@@ -73,7 +73,7 @@ data class Subject(
             currentGrade = "Хорошо",
             description =  "Построение математических моделей для решения прикладных задач, численные методы, анализ данных"
         ),
-        Subject(
+    Subject(
             id = "10",
             name = "Инструментальные средства разработки программного обеспечения",
             professor = "Леонтьев Д.А.",
@@ -81,13 +81,12 @@ data class Subject(
             currentGrade = "Отлично",
             description =  "Использование современных IDE, систем контроля версий, средств автоматизации сборки и тестирования"
         ),
-        Subject(
+    Subject(
             id = "11",
             name = "Обеспечение качества функционировыания компьютерных систем",
             professor = "Ушакова М.А.",
             credits = 91,
             currentGrade = "Отлично",
             description =  "Методы тестирования, контроль качества ПО, написание тест-кейсов, автоматизация тестирования"
-        ),
-    )
-}
+        )
+)
